@@ -54,9 +54,11 @@ Install the required Python dependencies by running:
 # Using Google colab
 
 google drive: https://drive.google.com/drive/folders/1aEgboB6IBxV-zbTJPEfeEZrnwQz3AamZ?usp=sharing
+
 Ensure the folder is copied into your Google Drive (e.g., MyDrive/defect_detection) this might have been in shared with me in your system.
 
 Use Colab notebook to run pipeline:
+
 https://colab.research.google.com/drive/10q-mA6IqbqlZ-9wiqa95Jki0dLB-UNXG?usp=sharing
 
 # Model Evaluation
@@ -65,8 +67,11 @@ After training the model, evaluation metrics such as accuracy, precision, recall
 Metrics are calculated using:
 
 Accuracy: Overall classification accuracy.
+
 Precision: True positive rate for defect class.
+
 Recall: Sensitivity for detecting defects.
+
 F1-Score: Harmonic mean of precision and recall.
 
 # Automated Training Pipeline
@@ -75,13 +80,20 @@ The Automated Training Pipeline automates the entire process of data preprocessi
 This will:
 
 Preprocess the data.
+
 Train the model.
+
 Save the trained model to the models/ directory.
+
 Evaluate the model on the test dataset.
+
 Monitor the training process.
 
 # Notes
 The dataset should be stored in the dataset/ directory.
+
 The training script saves the model to the models/ directory as name_of_model.h5.
+
 You can modify the model architecture, data preprocessing steps, or any other part of the pipeline to suit your specific needs.
+
 The training, evaluation, and monitoring scripts are designed to be modular and easy to extend.
