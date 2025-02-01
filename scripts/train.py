@@ -37,15 +37,15 @@ def build_model(base_model_name="ResNet50", input_shape=(227, 227, 3), num_class
     return model 
 
 # Train and save models
-#resnet_model = build_model("ResNet50", num_classes=len(df['label'].unique()))
+resnet_model = build_model("ResNet50", num_classes=len(df['label'].unique()))
 #mobilenet_model = build_model("MobileNetV2", num_classes=len(df['label'].unique()))
 VGG16_model = build_model("VGG16", num_classes=len(df['label'].unique()))
 
-#resnet_model.fit(train_generator, validation_data=test_generator, epochs=2)
-#resnet_model.save("models/resnet_model.h5")
+resnet_model.fit(train_generator, validation_data=test_generator, epochs=15)
+resnet_model.save("models/resnet_model.h5")
 
 #mobilenet_model.fit(train_generator, validation_data=test_generator, epochs=2)
 #mobilenet_model.save("models/mobilenet_model.h5")
 
-VGG16_model.fit(train_generator, validation_data=test_generator, epochs=2)
+VGG16_model.fit(train_generator, validation_data=test_generator, epochs=15)
 VGG16_model.save("models/VGG16_model.h5")
