@@ -7,16 +7,16 @@ The goal of this project is to build a defect detection system that can classify
 
 #Project Structure
 
-defect_detection/
-│── dataset/                  # Downloaded dataset
-│── models/                   # Saved trained models
-│── notebooks/
-│   ├── defect_detection.ipynb # Main notebook for training and evaluation
-│── scripts/
-│   ├── preprocess.py          # Data preprocessing script
-│   ├── train.py               # Model training script
-│   ├── evaluate.py            # Model evaluation script
-│   ├── monitor.py             # Monitoring script (MLflow/TensorBoard)
-│── requirements.txt           # Dependencies
-│── README.md                  # Project overview and instructions
-Installation
+    defect_detection/
+    │── dataset/                  # Downloaded dataset
+    │── models/                   # Saved trained models
+    │── notebooks/
+    │   ├── defect_detection.ipynb # Main notebook for training and evaluation
+    │── scripts/
+    │   ├── preprocess.py          # Data preprocessing script
+    │   ├── train.py               # Model training script
+    │   ├── evaluate.py            # Model evaluation script
+    │   ├── monitor.py             # Monitoring script (MLflow/TensorBoard)
+    │── requirements.txt           # Dependencies
+    │── README.md                  # Project overview and instructions
+    Installation
